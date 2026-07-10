@@ -1,0 +1,13 @@
+{
+  "name": "manual-rae",
+  "version": "1.0.0",
+  "description": "Manual de usuario del sistema RAE (Registro de Actividades y Eventos) de la UTP.",
+  "type": "module",
+  "scripts": {
+    "seed": "manual-seed",
+    "build": "manual-build"
+  },
+  "dependencies": {
+    "manual-generator": "github:afgrajaless/manual-generator"
+  }
+}

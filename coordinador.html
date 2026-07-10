@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>RAE UTP · Toma de asistencia</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo"><img src="assets/logo.png" alt="RAE" /></div>
+      <div><b>Registro de Actividades y Eventos</b><span>Manual de Usuario · UTP</span></div>
+    </div>
+    <span class="rolepill">🧑‍💼 Coordinador</span>
+    <a class="home-link" href="index.html">← Cambiar de manual</a>
+    <nav>
+      <ul class="toc" id="toc">
+<li><a href="#coordinador-alcance"><span class="n">1</span> Alcance</a></li>
+<li><a href="#coordinador-objetivos"><span class="n">2</span> Objetivos</a></li>
+<li><a href="#coordinador-descarga"><span class="n">3</span> Descarga</a></li>
+<li><a href="#coordinador-glosario"><span class="n">4</span> Glosario</a></li>
+<li><a href="#coordinador-auth"><span class="n">5</span> Autenticación</a></li>
+<li><a href="#coordinador-inicio"><span class="n">6</span> Inicio</a></li>
+<li><a href="#coordinador-funciones"><span class="n">7</span> Toma de asistencia</a></li>
+<li><a href="#coordinador-perfil"><span class="n">8</span> Perfil e historial</a></li>
+<li><a href="#coordinador-faq"><span class="n">9</span> Preguntas frecuentes</a></li>
+<li><a href="#coordinador-soporte"><span class="n">10</span> Soporte y Ayuda</a></li>
+      </ul>
+    </nav>
+    <div class="foot">
+      <div class="foot-logos">
+        <img class="foot-logo gtisi" src="assets/logo.svg" alt="GTISI · Gestión de Tecnologías" />
+        <img class="foot-logo" src="assets/ministerioeducacion.png" alt="Ministerio de Educación Nacional" />
+      </div>
+      <div>2026 · Versión 2.0</div>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div class="logo">RAE</div><b>Coordinador</b>
+      <a class="crosslink" href="participante.html">🎓 Manual del Participante</a>
+    </div>
+    <header class="cover" id="top">
+      <div class="inner">
+        <span class="kicker">🧑‍💼 Manual del Coordinador</span>
+        <h1>RAE UTP · Toma de asistencia</h1>
+        <div class="cover-row">
+          <img class="cover-logo" src="assets/logo.svg" alt="Logo UTP" />
+          <div class="cover-textcol">
+            <p class="subtitle">Manual de Usuario</p>
+            <p>Registra la asistencia de los participantes por QR, documento, lista o archivo.</p>
+          </div>
+        </div>
+        <div class="meta">
+          <div>Año <b>2026</b></div>
+          <div>Versión <b>2.0</b></div>
+          <div><a href="participante.html" style="color:#bcd2ff">Ver Manual del Participante →</a></div>
+        </div>
+      </div>
+    </header>
+    <div class="wrap">
+
+<section id="coordinador-alcance">
+<div class="sec-head"><div class="num">1</div><h2>Alcance del aplicativo</h2></div>
+<div class="card">
+<p class="lead">Como <b>Coordinador</b>, el aplicativo RAE te permite <b>tomar la asistencia</b> de los participantes a cada actividad: escaneando el <b>código QR</b> del asistente, leyendo su <b>documento de identidad</b>, <b>marcando manualmente</b> sobre la lista de inscritos o <b>subiendo un archivo</b> con el soporte. También puedes <b>anular</b> asistencias hechas por error y ver el avance de cada actividad.</p>
+<div class="scope in"><h4>Qué puedes hacer</h4><ul>
+<li>Ver las actividades que puedes gestionar y su avance.</li>
+<li>Registrar asistencia por <b>QR</b>, <b>documento</b>, <b>lista</b> o <b>archivo</b>.</li>
+<li>Leer cédula amarilla, cédula digital y carnet UTP.</li>
+<li>Ver la lista de inscritos y su estado.</li>
+<li>Quitar (anular) una asistencia registrada.</li>
+</ul></div>
+</div>
+
+</section>
+
+<section id="coordinador-objetivos">
+<div class="sec-head"><div class="num">2</div><h2>Objetivos del aplicativo</h2></div>
+<div class="card">
+<h3>Objetivo general</h3>
+<p class="lead">Agilizar la toma de asistencia de los participantes desde un dispositivo móvil, eliminando el registro en papel y manteniendo la información centralizada, trazable y disponible en tiempo real.</p>
+<h3>Objetivos específicos</h3>
+<div class="goal"><div class="g">✅</div><div>Registrar la asistencia mediante <b>escaneo de QR</b>, <b>lectura de documento</b>, <b>marcado en lista</b> o <b>carga de archivo</b>.</div></div>
+<div class="goal"><div class="g">🪪</div><div>Reducir errores de identificación leyendo automáticamente el documento del asistente.</div></div>
+<div class="goal"><div class="g">📊</div><div>Ver el <b>avance de asistencia</b> (registrados / libres / total inscritos) de cada actividad.</div></div>
+<div class="goal"><div class="g">🔎</div><div>Mantener la <b>trazabilidad</b> de cada registro y permitir <b>anular</b> asistencias hechas por error.</div></div>
+</div>
+
+</section>
+
+<section id="coordinador-descarga">
+<div class="sec-head"><div class="num">3</div><h2>Descarga la aplicación</h2></div>
+<div class="card">
+<p class="lead">Escanea el código con la cámara de tu teléfono para descargar la app, o toca el enlace.</p>
+<div class="download">
+<div class="store"><div class="qr"><img src="assets/qr-appstore.png" alt="Código QR App Store" /></div><div class="name">App Store</div><div class="sub">iPhone · iOS</div><a class="link" href="https://apps.apple.com/co/app/rae-utp/id6502660248" target="_blank" rel="noopener">Abrir en App Store</a></div>
+<div class="store"><div class="qr"><img src="assets/qr-playstore.png" alt="Código QR Google Play" /></div><div class="name">Google Play</div><div class="sub">Android</div><a class="link" href="https://play.google.com/store/apps/details?id=co.edu.utp.scanner_utp&amp;pli=1" target="_blank" rel="noopener">Abrir en Google Play</a></div>
+</div>
+</div>
+
+</section>
+
+<section id="coordinador-glosario">
+<div class="sec-head"><div class="num">4</div><h2>Glosario</h2></div>
+<div class="card">
+<p>Palabras que aparecen en este manual, explicadas en lenguaje sencillo.</p>
+<dl class="glossary">
+<div class="gitem"><dt>Evento</dt><dd>Es el <b>contenedor principal</b>: agrupa varias actividades bajo un mismo nombre.</dd></div>
+<div class="gitem"><dt>Actividad / Sesión</dt><dd>Cada <b>parte que compone un evento</b>. A cada una se le toma la asistencia por separado.</dd></div>
+<div class="gitem"><dt>Participante / Asistente</dt><dd>La persona <b>inscrita</b> en un evento que asiste a sus actividades.</dd></div>
+<div class="gitem"><dt>Coordinador</dt><dd>La persona <b>autorizada para tomar la asistencia</b> de una actividad.</dd></div>
+<div class="gitem"><dt>Código QR de ingreso</dt><dd>Imagen cuadrada de puntos, propia de cada participante. Se escanea para registrar la asistencia.</dd></div>
+<div class="gitem"><dt>Cédula amarilla</dt><dd>La cédula de ciudadanía <b>tradicional</b> (cartón plastificado).</dd></div>
+<div class="gitem"><dt>Cédula digital</dt><dd>La <b>nueva</b> cédula en formato tarjeta (plástico rígido), con los datos en el reverso.</dd></div>
+<div class="gitem"><dt>Carnet UTP</dt><dd>El <b>carné institucional</b> que identifica a estudiantes y empleados.</dd></div>
+<div class="gitem"><dt>Aforo / Avance</dt><dd>La <b>cantidad de personas registradas</b> frente al total de inscritos.</dd></div>
+<div class="gitem"><dt>Anular asistencia</dt><dd><b>Quitar</b> un registro de asistencia hecho por error (es reversible).</dd></div>
+</dl>
+</div>
+
+</section>
+
+<section id="coordinador-auth">
+<div class="sec-head"><div class="num">5</div><h2>Autenticación: “cómo ingresar”</h2></div>
+<div class="card">
+<ol class="steps">
+<li>Abre la aplicación <b>RAE</b> en tu dispositivo móvil.</li>
+<li>Ingresa tu <b>usuario</b> y <b>contraseña</b> institucionales de la UTP (los mismos del portal).</li>
+<li>Marca la casilla <b>“He leído y acepto los términos y condiciones”</b>. Puedes tocar el enlace para leer el texto completo.</li>
+<li>Toca el botón <b>“Ingresar”</b>.</li>
+</ol>
+<div class="gallery">
+<figure class="shot"><div class="phone"><img src="assets/login-nuevo.png" alt="Inicio de sesión"></div><figcaption><b>Inicio de sesión</b>Usuario, contraseña y aceptación de términos.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/terminos-nuevo.png" alt="Términos y condiciones"></div><figcaption><b>Términos y condiciones</b>Tratamiento de datos personales (Ley 1581).</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/aceptatermino2.PNG" alt="Permisos y derechos"></div><figcaption><b>Permisos y derechos</b>Detalle de los datos que se utilizan.</figcaption></figure>
+</div>
+<div class="callout tip"><span class="i">✅</span><div>El permiso para tomar asistencia se otorga <b>por actividad</b>. Tras ingresar, abre la pestaña <b>Asistencia</b> para ver lo que puedes gestionar.</div></div>
+</div>
+
+</section>
+
+<section id="coordinador-inicio">
+<div class="sec-head"><div class="num">6</div><h2>Inicio</h2></div>
+<div class="card">
+<p class="lead">La pestaña <b>Inicio</b> da la bienvenida y reúne tus eventos recientes y los eventos públicos de la Universidad. La barra inferior tiene cuatro pestañas: <b>Inicio</b>, <b>Asistencia</b> (registrar asistencia), <b>Mis eventos</b> y <b>Perfil</b>.</p>
+<div class="gallery">
+<figure class="shot"><div class="phone"><img src="assets/home.png" alt="Inicio"></div><figcaption><b>Inicio</b>Eventos recientes y públicos.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/eventos-publicos.png" alt="Eventos · Próximos"></div><figcaption><b>Eventos · Próximos</b>Listado completo con búsqueda.</figcaption></figure>
+</div>
+<div class="callout"><span class="i">🧭</span><div>Para tomar asistencia, usa la pestaña <b>Asistencia</b> (no “Mis eventos”): ahí aparecen las actividades que puedes gestionar.</div></div>
+</div>
+
+</section>
+
+<section id="coordinador-funciones">
+<div class="sec-head"><div class="num">7</div><h2>Toma de asistencia</h2></div>
+<div class="card">
+<h3>A. Encontrar el evento y sus actividades</h3>
+<p>Entra a la pestaña <b>Asistencia</b> y busca el evento o actividad en el listado. Al seleccionarlo verás el <b>detalle</b> con el avance de asistencia (registrados / libres / total inscritos) y, más abajo, las <b>actividades del evento</b>, cada una con su botón para registrar.</p>
+<div class="gallery">
+<figure class="shot"><div class="phone"><img src="assets/registrar-asistencia.png" alt="Registrar asistencia"></div><figcaption><b>Registrar asistencia</b>Busca y selecciona el evento o actividad.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/detalle-coordinador.png" alt="Detalle de la actividad"></div><figcaption><b>Detalle de la actividad</b>Avance de asistencia registrada.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/actividades-coordinador.png" alt="Actividades del evento"></div><figcaption><b>Actividades del evento</b>Cada una tiene su botón Registrar asistencia.</figcaption></figure>
+</div>
+<h3>B. Elegir el método de registro</h3>
+<p>Toca <b>“Registrar la asistencia”</b> y elige cómo se registrará. En modalidad presencial hay cuatro opciones. Tras elegir el método, selecciona la <b>sesión/actividad</b> sobre la que vas a registrar.</p>
+<ol class="steps">
+<li><b>Escanear código QR</b> — lee el QR del asistente.</li>
+<li><b>Escanear documento de identidad</b> — cédula física, cédula digital o carnet UTP.</li>
+<li><b>Marcar en lista</b> — marca manualmente sobre los inscritos.</li>
+<li><b>Subir asistencia</b> — adjunta un archivo (PDF, JPG o PNG) con el soporte.</li>
+</ol>
+<div class="gallery">
+<figure class="shot"><div class="phone"><img src="assets/metodos-registro.png" alt="Métodos de registro"></div><figcaption><b>Métodos de registro</b>QR, documento, lista o subir archivo.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/selector-sesion.png" alt="Selecciona la actividad"></div><figcaption><b>Selecciona la actividad</b>Elige la sesión a registrar.</figcaption></figure>
+</div>
+<h3>C. Registrar por QR o por documento</h3>
+<p>Apunta la cámara al <b>QR del asistente</b> o encuadra su <b>documento</b>. Al leerlo, confirma los datos y se registra la asistencia. El aplicativo reconoce la <b>cédula amarilla</b>, la <b>cédula digital</b> y el <b>carnet UTP</b>.</p>
+<div class="callout"><span class="i">📇</span><div>Se registra <b>el reverso</b> del documento —la cara que tiene el código—. Encuádralo completo dentro del recuadro.</div></div>
+<div class="gallery">
+<figure class="shot"><div class="phone"><img src="assets/amarilla1.png" alt="Cédula amarilla"></div><figcaption><b>Cédula amarilla</b>El reverso: la cara con el código de barras grande.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/digital.jpg" alt="Cédula digital"></div><figcaption><b>Cédula digital</b>El reverso: la cara con el código y las líneas de texto.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/lectorqrdocumento.PNG" alt="Lectura con la cámara"></div><figcaption><b>Lectura con la cámara</b>Guía para encuadrar QR o documento.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/confirmarasistencia1.PNG" alt="Confirmar datos"></div><figcaption><b>Confirmar datos</b>Verifica nombre y documento.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/confirmarasistenia2.PNG" alt="Confirmación"></div><figcaption><b>Confirmación</b>Antes de registrar.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/asistenciaregistrada1.PNG" alt="Asistencia registrada"></div><figcaption><b>Asistencia registrada</b>Nombre, documento y hora.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/asistenciaregistrada2.PNG" alt="Aforo actualizado"></div><figcaption><b>Aforo actualizado</b>Continúa con el siguiente asistente.</figcaption></figure>
+</div>
+<div class="callout tip"><span class="i">💡</span><div>Procura buena iluminación y mantén el documento estable dentro del recuadro. Para la cédula amarilla y el carnet, encuadra la cara con el código de barras; para la cédula digital, muestra el reverso.</div></div>
+<h3>D. Marcar en lista y quitar asistencia</h3>
+<p>En <b>“Marcar en lista”</b> verás los inscritos con una casilla por persona. Marca (asistió) o desmarca (quitar) y toca <b>“Guardar asistencia”</b>. Si vas a quitar asistencias, el aplicativo pedirá <b>confirmación</b> mostrando las personas afectadas. Quitar una asistencia es <b>reversible</b>: puedes volver a registrarla.</p>
+<div class="gallery">
+<figure class="shot"><div class="phone"><img src="assets/lista-asistencia.png" alt="Lista de asistencia"></div><figcaption><b>Lista de asistencia</b>Busca por nombre o documento y marca con la casilla.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/asistenciamultiple1.PNG" alt="Asistencia guardada"></div><figcaption><b>Asistencia guardada</b>Confirmación del registro.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/eliminarasistencia.PNG" alt="Quitar asistencia"></div><figcaption><b>Quitar asistencia</b>Confirmación antes de anular.</figcaption></figure>
+</div>
+</div>
+
+</section>
+
+<section id="coordinador-perfil">
+<div class="sec-head"><div class="num">8</div><h2>Perfil e historial</h2></div>
+<div class="card">
+<p>En la pestaña <b>Perfil</b> verás tus datos y el conteo de <b>eventos inscritos</b> y <b>asistidos</b>. Desde aquí también puedes activar el <b>modo oscuro</b>, abrir tu <b>Historial de eventos</b>, consultar los términos y condiciones y <b>cerrar sesión</b>.</p>
+<div class="gallery">
+<figure class="shot"><div class="phone"><img src="assets/perfil.png" alt="Perfil del usuario"></div><figcaption><b>Perfil del usuario</b>Datos personales y conteo de eventos.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/perfil-detalle.png" alt="Opciones"></div><figcaption><b>Opciones</b>Historial, modo oscuro, términos y cierre de sesión.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/perfil-oscuro.png" alt="Modo oscuro"></div><figcaption><b>Modo oscuro</b>Activa un tema oscuro para la app.</figcaption></figure>
+</div>
+<h3>Historial de eventos</h3>
+<p>Desde <b>Perfil → Historial de eventos</b> consultas <b>todos los eventos</b> en los que has participado: vigentes y finalizados. Puedes <b>buscar</b>, filtrar por estado (<b>Todos · Activos · Completados</b>) y por <b>rango de fechas</b>.</p>
+<div class="gallery">
+<figure class="shot"><div class="phone"><img src="assets/historial.png" alt="Historial · Todos"></div><figcaption><b>Historial · Todos</b>Vigentes y finalizados.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/historial-activos.png" alt="Historial · Activos"></div><figcaption><b>Historial · Activos</b>Solo los vigentes.</figcaption></figure>
+<figure class="shot"><div class="phone"><img src="assets/historial-completados.png" alt="Historial · Completados"></div><figcaption><b>Historial · Completados</b>Solo los finalizados.</figcaption></figure>
+</div>
+</div>
+
+</section>
+
+<section id="coordinador-faq">
+<div class="sec-head"><div class="num">9</div><h2>Preguntas frecuentes</h2></div>
+
+<details class="faq"><summary>No veo la opción para tomar asistencia en un evento. ¿Por qué?</summary><div class="a">Porque no tienes asignado el permiso de asistencia en esa actividad. Ese permiso se otorga por actividad; solicítalo al responsable del evento.</div></details>
+<details class="faq"><summary>El asistente no tiene su QR a la mano. ¿Cómo registro su asistencia?</summary><div class="a">Usa “Escanear documento de identidad” o “Marcar en lista” buscándolo por nombre o documento.</div></details>
+<details class="faq"><summary>El escáner no reconoce la cédula.</summary><div class="a">Verifica la iluminación y que el documento esté completo dentro del recuadro. Para la cédula amarilla y el carnet UTP, encuadra la cara con el código de barras; para la cédula digital, muestra el reverso. Si persiste, usa “Marcar en lista”.</div></details>
+<details class="faq"><summary>Aparece “Ya registrado” al escanear.</summary><div class="a">La persona ya tiene la asistencia marcada en esa actividad. No es necesario registrarla de nuevo.</div></details>
+<details class="faq"><summary>Aparece “No inscrito”.</summary><div class="a">La persona no figura inscrita en la actividad. Verifica con el responsable del evento.</div></details>
+<details class="faq"><summary>Registré a alguien por error. ¿Puedo deshacerlo?</summary><div class="a">Sí. En “Marcar en lista” desmarca a la persona y guarda; luego confirma la eliminación. Es reversible.</div></details>
+<details class="faq"><summary>¿Para qué sirve “Subir asistencia”?</summary><div class="a">Para adjuntar un archivo (PDF, JPG o PNG) con el soporte de asistencia cuando el registro no se hizo dentro de la app.</div></details>
+<details class="faq"><summary>¿Necesito internet?</summary><div class="a">Sí. El aplicativo consulta y registra la información en línea.</div></details>
+</section>
+
+<section id="coordinador-soporte">
+<div class="sec-head"><div class="num">10</div><h2>Soporte y Ayuda</h2></div>
+<div class="card">
+<p class="lead">¿Tienes dudas o problemas con la aplicación? Comunícate con la Mesa de Ayuda de la Universidad Tecnológica de Pereira.</p>
+</div>
+<div class="support"><div class="ic">💡</div><div>
+<div><b>Correo de soporte:</b> <a href="mailto:soporte@utp.edu.co">soporte@utp.edu.co</a></div>
+<div><b>Mesa de ayuda (conmutador UTP):</b> <a href="tel:+57 (606) 313 7300">+57 (606) 313 7300</a></div>
+<div><b>Portal UTP:</b> <a href="https://www.utp.edu.co" target="_blank" rel="noopener">www.utp.edu.co</a></div>
+</div></div>
+</section>
+
+    </div>
+  </div>
+</div>
+<button class="toTop" id="toTop" onclick="document.getElementById('top').scrollIntoView()">↑ Índice</button>
+<script>
+  const links = [...document.querySelectorAll('#toc a')];
+  const map = {};
+  links.forEach(a => map[a.getAttribute('href').slice(1)] = a);
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        links.forEach(l=>l.classList.remove('active'));
+        map[e.target.id]?.classList.add('active');
+      }
+    });
+  },{rootMargin:'-20% 0px -70% 0px'});
+  document.querySelectorAll('section[id]').forEach(s=>obs.observe(s));
+  const toTop = document.getElementById('toTop');
+  addEventListener('scroll',()=>{ toTop.classList.toggle('show', scrollY>600); });
+</script>
+</body>
+</html>
