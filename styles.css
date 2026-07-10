@@ -175,16 +175,38 @@ ol.steps>li:not(:last-child)::after{
 .goal:last-child{border-bottom:0}
 .goal .g{flex:0 0 auto;width:34px;height:34px;border-radius:10px;background:var(--accent-soft);color:var(--navy);display:grid;place-items:center;font-size:17px}
 
-/* ---------- Gallery / phone ---------- */
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(208px,1fr));gap:24px;margin:22px 0 4px}
-figure.shot{margin:0;display:flex;flex-direction:column;align-items:center}
-.phone{
+/* ---------- Capturas (galería) ---------- */
+/* El modo lo pone el generador como clase del <body>: modo-app | modo-web. */
+
+/* Modo app (aplicación móvil): marco de teléfono, galería en rejilla. */
+.modo-app .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(208px,1fr));gap:24px;margin:22px 0 4px}
+.modo-app figure.shot{margin:0;display:flex;flex-direction:column;align-items:center}
+.modo-app .phone{
   width:100%;max-width:240px;border-radius:30px;background:#0c1320;padding:9px;
   box-shadow:0 24px 48px -26px rgba(12,38,84,.7);border:1px solid #1d2740;
 }
-.phone img{display:block;width:100%;border-radius:23px;background:#fff}
-figure.shot figcaption{margin-top:12px;font-size:13.5px;color:var(--muted);text-align:center;max-width:240px}
-figure.shot figcaption b{color:var(--text);display:block;font-size:14px}
+.modo-app .phone img{display:block;width:100%;border-radius:23px;background:#fff}
+.modo-app figure.shot figcaption{margin-top:12px;font-size:13.5px;color:var(--muted);text-align:center;max-width:240px}
+.modo-app figure.shot figcaption b{color:var(--text);display:block;font-size:14px}
+
+/* Modo web (aplicación de escritorio): marco de navegador, ancho completo. */
+.modo-web .gallery{display:grid;grid-template-columns:1fr;gap:34px;margin:26px 0 10px}
+.modo-web figure.shot{margin:0;display:block}
+.modo-web .phone{
+  position:relative;width:100%;max-width:100%;border-radius:12px;overflow:hidden;
+  background:#0c1320;border:1px solid #1d2740;padding-top:38px;
+  box-shadow:0 26px 50px -28px rgba(12,38,84,.75);
+}
+.modo-web .phone::before{
+  content:"";position:absolute;top:14px;left:16px;width:54px;height:11px;
+  background:
+    radial-gradient(circle 5.5px at 5.5px 5.5px,#ff5f57 98%,transparent) 0 0/18px 11px no-repeat,
+    radial-gradient(circle 5.5px at 5.5px 5.5px,#febc2e 98%,transparent) 18px 0/18px 11px no-repeat,
+    radial-gradient(circle 5.5px at 5.5px 5.5px,#28c840 98%,transparent) 36px 0/18px 11px no-repeat;
+}
+.modo-web .phone img{display:block;width:100%;border-radius:0;background:#fff}
+.modo-web figure.shot figcaption{margin-top:14px;font-size:14px;color:var(--muted);text-align:center;max-width:none}
+.modo-web figure.shot figcaption b{color:var(--text);display:block;font-size:15px;margin-bottom:2px}
 
 .callout{display:flex;gap:13px;background:var(--accent-soft);border:1px solid #cfe0fb;border-radius:13px;padding:15px 18px;margin:18px 0;font-size:14.5px}
 .callout .i{flex:0 0 auto;font-size:18px}

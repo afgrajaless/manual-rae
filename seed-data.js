@@ -12,6 +12,7 @@ export const seedData = {
     logoArchivo: 'logo.png',
     logoAlt: 'RAE',
     logoTexto: 'RAE',
+    modo: 'app',
     descarga: [
       { tienda: 'App Store', plataforma: 'iPhone · iOS', url: 'https://apps.apple.com/co/app/rae-utp/id6502660248', archivoQR: 'qr-appstore.png' },
       { tienda: 'Google Play', plataforma: 'Android', url: 'https://play.google.com/store/apps/details?id=co.edu.utp.scanner_utp&pli=1', archivoQR: 'qr-playstore.png' },
